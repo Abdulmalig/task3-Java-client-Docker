@@ -29,7 +29,6 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build -t ${{ secrets.DOCKER_USERNAME }}/imagegenerator-client:latest .
-      working-directory: java_sqs_client
     
     # Step 5: Tag the image with the commit SHA
     - name: Tag the image with commit SHA
